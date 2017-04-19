@@ -1873,6 +1873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac78437e33647c44b2ce788987bb09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DrawCount: {fileID: 0}
   TreasureCount: {fileID: 1885661248}
   ActionCount: {fileID: 89973324}
   BuyCount: {fileID: 400674498}
@@ -3691,7 +3692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -219.1}
+  m_AnchoredPosition: {x: 0, y: -189.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096543680
@@ -5324,8 +5325,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -86}
-  m_SizeDelta: {x: 167, y: 208}
+  m_AnchoredPosition: {x: 0, y: -71}
+  m_SizeDelta: {x: 167, y: 178}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2089822931
 MonoBehaviour:
