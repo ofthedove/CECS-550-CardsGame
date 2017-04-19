@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     int buys = 1;
     int treasure = 0;
     int draws = 5;
+    int victoryPoints = 0;
     Hand hand;
     Deck deck;
     Deck discard;
@@ -97,6 +98,27 @@ public class Player : MonoBehaviour {
         get
         {
             return hand;
+        }
+    }
+
+    public Deck PlayerDiscard
+    {
+        get
+        {
+            return discard;
+        }
+    }
+
+    public int VictoryPoints
+    {
+        get
+        {
+            return victoryPoints;
+        }
+
+        set
+        {
+            victoryPoints = value;
         }
     }
 

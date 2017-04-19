@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject PlayerTurn;
 
+    private static GameObject WinPanel;
+
     public int[] playset = new int[10];
     public static List<DominionCard> cardsLoaded = new List<DominionCard>();
     public const int MAX_HAND_SIZE = 7;
@@ -38,6 +40,8 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        WinPanel = GameObject.Find("WinPanel");
+        WinPanel.SetActive(false);
         List<GameObject> p = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
         foreach (GameObject player in p)
         {
@@ -153,15 +157,40 @@ public class GameManager : MonoBehaviour {
     {
         if(province)
         {
-            //game winning code here
+            GameEnd();
         }
         else
         {
             stockPilesEmpty++;
             if(stockPilesEmpty == 3)
             {
-                //game winning code here
+                GameEnd();
             }
+        }
+    }
+
+    public static void GameEnd()
+    {
+        Player winner = null;
+        foreach (Player p in players)
+        {
+            //discard hand
+            p.Reshuffle();
+            foreach (DominionCard d in p.PlayerDeck.Collection)
+            {
+                p.VictoryPoints += d.VValue;
+            }
+            if (winner == null || winner.VictoryPoints < p.VictoryPoints)
+            {
+                winner = p;
+            }
+        }
+        WinPanel.SetActive(true);
+        Text winText = WinPanel.transform.FindChild("Text").GetComponent<Text>();
+        winText.text+="The winner is " + winner.name+"\n\n";
+        foreach (Player p in players)
+        {
+            winText.text += (p.name + "\t" + p.VictoryPoints + " VP\n");
         }
     }
 }
