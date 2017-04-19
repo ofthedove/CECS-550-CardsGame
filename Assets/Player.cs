@@ -74,6 +74,7 @@ public class Player : MonoBehaviour {
         set
         {
             draws = value;
+            gameManager.UpdateCounts();
         }
     }
 

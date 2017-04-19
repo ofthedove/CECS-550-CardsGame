@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     [SerializeField]
+    private GameObject DrawCount;
+
+    [SerializeField]
     private GameObject TreasureCount;
 
     [SerializeField]
@@ -146,6 +149,7 @@ public class GameManager : MonoBehaviour {
 
     public void UpdateCounts()
     {
+        DrawCount.GetComponent<Text>().text = "Draws: " + activePlayer.Draws;
         TreasureCount.GetComponent<Text>().text = "Treasure: " + activePlayer.Treasure;
         ActionCount.GetComponent<Text>().text = "Actions: " + activePlayer.Actions;
         BuyCount.GetComponent<Text>().text = "Buys: " + activePlayer.Buys;
