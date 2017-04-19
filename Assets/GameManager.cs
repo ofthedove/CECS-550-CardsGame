@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         WinPanel = GameObject.Find("WinPanel");
+        WinPanel.SetActive(false);
         List<GameObject> p = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
         foreach (GameObject player in p)
         {
@@ -188,6 +189,7 @@ public class GameManager : MonoBehaviour {
                 winner = p;
             }
         }
+        WinPanel.SetActive(true);
         Color color = WinPanel.GetComponent<Image>().color;
         color.a = 255;
         WinPanel.GetComponent<Image>().color = color;
