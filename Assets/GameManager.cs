@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         WinPanel = GameObject.Find("WinPanel");
-        WinPanel.SetActive(false);
         List<GameObject> p = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
         foreach (GameObject player in p)
         {
@@ -174,7 +173,7 @@ public class GameManager : MonoBehaviour {
         Player winner = null;
         foreach (Player p in players)
         {
-            //discard hand
+            p.PlayerHand.DiscardAll(p);
             p.Reshuffle();
             foreach (DominionCard d in p.PlayerDeck.Collection)
             {
@@ -185,7 +184,9 @@ public class GameManager : MonoBehaviour {
                 winner = p;
             }
         }
-        WinPanel.SetActive(true);
+        Color color = WinPanel.GetComponent<Image>().color;
+        color.a = 255;
+        WinPanel.GetComponent<Image>().color = color;
         Text winText = WinPanel.transform.FindChild("Text").GetComponent<Text>();
         winText.text+="The winner is " + winner.name+"\n\n";
         foreach (Player p in players)
