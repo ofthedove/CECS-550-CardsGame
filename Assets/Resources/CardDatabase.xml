@@ -1,0 +1,348 @@
+﻿<root>
+  <DominionCard>
+    <ID>0</ID>
+    <CardName>Cellar</CardName>
+    <Description>+1 Action
+Discard any number of cards. +1 Card per card discarded.</Description>
+    <CardType>Action</CardType>
+    <Cost>2</Cost>
+    <Actions>1</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/cellar</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>1</ID>
+    <CardName>Chapel</CardName>
+    <Description>Trash up to 4 cards from your hand.</Description>
+    <CardType>Action</CardType>
+    <Cost>2</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/chapel</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>2</ID>
+    <CardName>Moat</CardName>
+    <Description>+2 Cards
+Whenever another player plays an Attack card, you may reveal this from your hand. If you do, you are unaffected by that attack.
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>2</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>2</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/moat</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>3</ID>
+    <CardName>Chancellor</CardName>
+    <Description>+2 Treasure
+You may immediately put your deck into your discard pile.
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>3</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>2</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/chancellor</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>4</ID>
+    <CardName>Village</CardName>
+    <Description>+1 Card
++2 Actions
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>3</Cost>
+    <Actions>2</Actions>
+    <Buys>0</Buys>
+    <Cards>1</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/village</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>5</ID>
+    <CardName>Woodcutter</CardName>
+    <CardType>Action</CardType>
+    <Description>+1 Buy
++2 Treasure
+    </Description>
+    <Cost>3</Cost>
+    <Actions>0</Actions>
+    <Buys>1</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>2</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/woodcutter</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>6</ID>
+    <CardName>Workshop</CardName>
+    <Description>Gain a card costing up to 4 Treasure</Description>
+    <CardType>Action</CardType>
+    <Cost>3</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/workshop</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>7</ID>
+    <CardName>Bureaucrat</CardName>
+    <Description>
+      Gain a Silver card; put it on top of your deck.
+      Each other player reveals a Victory card from his hand and puts it on his deck (or reveals a hand with no Victory cards)
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>4</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/bureaucrat</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>8</ID>
+    <CardName>Feast</CardName>
+    <Description>
+      Trash this card.
+      Gain a card costing up to 5 Treasure.
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>4</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/feast</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>9</ID>
+    <CardName>Militia</CardName>
+    <Description>+2 Treasure
+Each player discards down to 3 cards in his hand.
+    </Description>
+    <CardType>Action - Attack</CardType>
+    <Cost>4</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>2</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/militia</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>10</ID>
+    <CardName>Moneylender</CardName>
+    <Description>Trash a Copper card from your hand.
+If you do, gain 3 Treasure.
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>4</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/moneylender</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>11</ID>
+    <CardName>Remodel</CardName>
+    <Description>Trash a card from your hand.
+Gain a card costing up to 2 Treasure more than the trashed card.
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>4</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/remodel</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>12</ID>
+    <CardName>Smithy</CardName>
+    <Description>+3 Cards
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>4</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>3</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/smithy</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>13</ID>
+    <CardName>Spy</CardName>
+    <Description>+1 Card
++1 Action
+Each player (including you) reveals the top card of his deck and either discards it or puts it back, your choice.
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>4</Cost>
+    <Actions>1</Actions>
+    <Buys>0</Buys>
+    <Cards>1</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/spy</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>14</ID>
+    <CardName>Thief</CardName>
+    <Description>Trash this card.
+      Gain a card costing up to 5 Treasure.
+    </Description>
+    <CardType>Action</CardType>
+    <Cost>4</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/thief</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>15</ID>
+    <CardName>Workshop</CardName>
+    <Description>Gain a card costing up to 4 Treasure</Description>
+    <CardType>Action</CardType>
+    <Cost>3</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/workshop</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>16</ID>
+    <CardName>Market</CardName>
+    <Description>+1 Card
++1 Action
++1 Buy
++1 Treasure</Description>
+    <CardType>Action</CardType>
+    <Cost>5</Cost>
+    <Actions>1</Actions>
+    <Buys>1</Buys>
+    <Cards>1</Cards>
+    <TreasureValue>1</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/market</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>17</ID>
+    <CardName>Mine</CardName>
+    <Description>Trash a Treasure card from your hand.
+Gain a Treasure card costing up to 3 Treasure more; put it in your hand.</Description>
+    <CardType>Action</CardType>
+    <Cost>5</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/mine</SpritePath>
+  </DominionCard>
+  
+  
+  
+  <DominionCard>
+    <ID>90</ID>
+    <CardName>Copper</CardName>
+    <Description>+1 Treasure</Description>
+    <CardType>Treasure</CardType>
+    <Cost>0</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>1</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/copper</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>91</ID>
+    <CardName>Silver</CardName>
+    <Description>+2 Treasure</Description>
+    <CardType>Treasure</CardType>
+    <Cost>3</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>2</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/silver</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>92</ID>
+    <CardName>Gold</CardName>
+    <Description>+3 Treasure</Description>
+    <CardType>Treasure</CardType>
+    <Cost>6</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>3</TreasureValue>
+    <VictoryValue>0</VictoryValue>
+    <SpritePath>Card Images/gold</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>93</ID>
+    <CardName>Estate</CardName>
+    <Description>+1 Victory Point</Description>
+    <CardType>Victory</CardType>
+    <Cost>2</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>1</VictoryValue>
+    <SpritePath>Card Images/estate</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>94</ID>
+    <CardName>Duchy</CardName>
+    <Description>+3 Victory Points</Description>
+    <CardType>Victory</CardType>
+    <Cost>5</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>3</VictoryValue>
+    <SpritePath>Card Images/duchy</SpritePath>
+  </DominionCard>
+  <DominionCard>
+    <ID>95</ID>
+    <CardName>Province</CardName>
+    <Description>+6 Victory Points</Description>
+    <CardType>Victory</CardType>
+    <Cost>8</Cost>
+    <Actions>0</Actions>
+    <Buys>0</Buys>
+    <Cards>0</Cards>
+    <TreasureValue>0</TreasureValue>
+    <VictoryValue>6</VictoryValue>
+    <SpritePath>Card Images/province</SpritePath>
+  </DominionCard>
+</root>
