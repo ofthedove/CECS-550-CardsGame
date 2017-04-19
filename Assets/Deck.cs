@@ -160,7 +160,7 @@ public class Deck : MonoBehaviour {
                     == GameManager.activePlayer.PlayerID)
                 {
                     //if(GameManager.activePlayer.PlayerHand.Count < GameManager.MAX_HAND_SIZE)
-                    while (GameManager.activePlayer.Draws > 0)
+                    while (GameManager.activePlayer.Draws > 0 && GameManager.activePlayer.PlayerDeck.Count > 0)
                     {
                         GameManager.activePlayer.PlayerHand.AddCard(DrawCard());
                         GameManager.activePlayer.Draws--;
