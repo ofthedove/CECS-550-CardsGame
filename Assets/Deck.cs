@@ -30,13 +30,13 @@ public class Deck : MonoBehaviour {
         }
     }
 
-    public void Shuffle()
+    public void Shuffle(System.Random rng)
     {
         int n = Collection.Count;
         while (n > 1)
         {
             n--;
-            int k = new System.Random().Next(n + 1);
+            int k = rng.Next(n + 1);
             DominionCard value = Collection[k];
             Collection[k] = Collection[n];
             Collection[n] = value;

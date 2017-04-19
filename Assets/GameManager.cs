@@ -29,6 +29,13 @@ public class GameManager : MonoBehaviour {
     private Dictionary<string, string> cardDictionary = new Dictionary<string, string>();
     private static List<Dictionary<string, string>> playsetDictionary = new List<Dictionary<string, string>>();
 
+    System.Random gameRNG = new System.Random();
+
+    public System.Random GameRNG
+    {
+        get { return gameRNG; }
+    }
+
     // Use this for initialization
     void Start () {
         List<GameObject> p = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
@@ -86,7 +93,7 @@ public class GameManager : MonoBehaviour {
             {
                 player.PlayerDeck.AddCard(FindCardByName("Estate"));
             }
-            player.PlayerDeck.Shuffle();
+            player.PlayerDeck.Shuffle(gameRNG);
         }
     }
 

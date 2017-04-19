@@ -147,7 +147,7 @@ public class Player : MonoBehaviour {
         {
             discard.gameObject.GetComponent<SpriteRenderer>().sprite = null;
         }
-        deck.Shuffle();
+        deck.Shuffle(gameManager.GameRNG);
     }
 
     public void Reset()
