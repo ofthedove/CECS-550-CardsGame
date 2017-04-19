@@ -129,6 +129,11 @@ public class Player : MonoBehaviour {
         discard.AddCard(c);
     }
 
+    public void DiscardCard(DominionCard c)
+    {
+        discard.AddCard(c);
+    }
+
     public void Reshuffle()
     {
         deck.Collection.AddRange(discard.Collection);

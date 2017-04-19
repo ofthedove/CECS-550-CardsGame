@@ -126,6 +126,7 @@ public class GameManager : MonoBehaviour {
 
     public void NextPlayerTurn()
     {
+        activePlayer.PlayerHand.DiscardAll(activePlayer);
         activePlayerIndex++;
         activePlayerIndex %= players.Count;
         activePlayer = players[activePlayerIndex];

@@ -47,4 +47,18 @@ public class Hand : MonoBehaviour {
             }
         }
     }
+
+    public void DiscardAll(Player owner)
+    {
+        foreach (GameObject obj in hand)
+        {
+            Deck deck = obj.GetComponent<Deck>();
+            if (deck.Count > 0)
+            {
+                DominionCard c = deck.DrawCard();
+                owner.DiscardCard(c);
+                count--;
+            }
+        }
+    }
 }
